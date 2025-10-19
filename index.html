@@ -53,7 +53,7 @@
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 md:px-12 py-24">
+    <main id="main-content" class="max-w-7xl mx-auto px-6 md:px-12 py-24">
 
         <!-- Hero Section -->
         <section id="home" class="h-screen flex flex-col justify-center items-center text-center">
@@ -82,13 +82,12 @@
                     <img src="LN_Profile.jpg" alt="Your Name" class="rounded-3xl w-full h-auto object-cover glass-effect transition-transform duration-500 hover:scale-105">
                 </div>
                 <div class="lg:order-1">
-                    <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white">About Me</h2>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                    I am a full-stack developer with a passion for creating dynamic and intuitive user experiences. My journey in web development began with a curiosity for how things work, which quickly turned into a love for crafting elegant solutions to complex problems.
-                </p>
-                <p class="text-gray-300 leading-relaxed">
-                    I specialize in building applications from the ground up, handling everything from the database architecture to the pixel-perfect front-end design. With a strong foundation in technologies like Python, Laravel, and Vue.js, I am always eager to learn new things and take on new challenges.
-                </p>
+                    <p class="text-gray-300 leading-relaxed mb-4 text-lg">
+                        I am a **Full-Stack Developer** with **2 years of professional experience** specializing in building robust, data-driven applications from the ground up.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        I leverage a powerful stack—**Laravel/PHP** and **FastAPI/Python** for scalable backend architecture, combined with **Vue.js** for dynamic frontend experiences. My core focus is delivering elegant, end-to-end solutions, from designing the database schema to deploying pixel-perfect interfaces. I thrive on translating complex problems into clean, maintainable code.
+                    </p>
                 </div>
             </div>
         </section>
@@ -97,83 +96,52 @@
         <section id="projects" class="py-20 md:py-24">
             <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 text-white">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div class="bg-gray-800 rounded-2xl p-8 shadow-lg text-left">
-                    <img src="https://placehold.co/100x100/2D3748/white?text=To+Do+App" alt="To Do App Thumbnail" class="w-24 h-24 mb-6 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-2">My To-Do App</h3>
+                <!-- Project Card 1: My To-Do App (FastAPI/Vue.js) -->
+                <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-blue-500/30 transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="todo-logo.png" alt="To Do App Thumbnail" class="w-24 h-24 mb-6 rounded-lg ring-2 ring-blue-500/50">
+                    <h3 class="text-2xl font-bold mb-2 text-white">My To-Do App</h3>
                     <p class="text-gray-400 mb-4">
-                        A dynamic to-do list application built to showcase full-stack development skills. This project features user authentication, CRUD functionality for tasks, and a responsive design. The front-end is built with Vue.js and styled with Tailwind CSS, while the back-end is powered by a FastAPI backend.
+                        A dynamic to-do list application built to showcase full-stack development skills. This project features user authentication, CRUD functionality for tasks, and a responsive design. The front-end is built with **Vue.js** and styled with Tailwind CSS, while the back-end is powered by a **FastAPI** backend.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                        <a href="https://todo-manager-ln.netlify.app/" class="text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium">
                             <i class="fas fa-external-link-alt mr-1"></i> Live Demo
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-                <!-- Project Card 2 -->
-                <!-- <div class="p-6 rounded-2xl glass-effect transition-transform duration-300 hover:scale-105">
-                    <img src="https://placehold.co/600x400/1e293b/d1d5db?text=Project+2" alt="Project 2" class="rounded-xl mb-4 w-full h-auto object-cover">
-                    <h3 class="text-xl font-semibold text-white mb-2">Project Title 2</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                        A brief description of your project. Highlight your role and the key features. (e.g., Vue.js, Node.js, MongoDB).
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
-                            <i class="fas fa-external-link-alt mr-1"></i> Live Demo
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div> -->
-
-                   <div class="bg-gray-800 rounded-2xl p-8 shadow-lg text-left">
-                    <img src="https://placehold.co/100x100/2D3748/white?text=Social+App" alt="Social Media App Thumbnail" class="w-24 h-24 mb-6 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-2">Simple Social Media App</h3>
-                    <p class="text-gray-400 mb-4">
-                        A personal social media platform built using **Vue.js**, **Node.js**, and **MongoDB**. The application allows users to create profiles, make posts, and interact with other users. This project highlights skills in **real-time data management** and **RESTful API design**, along with implementing a clean, user-friendly interface.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
-                            <i class="fas fa-external-link-alt mr-1"></i> Live Demo
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                        <a href="https://github.com/lnarayan-main/todo-app-vuejs-frontend" class="text-gray-400 hover:text-gray-300 transition-colors duration-300 font-medium">
                             <i class="fab fa-github mr-1"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project Card 3 -->
-                <!-- <div class="p-6 rounded-2xl glass-effect transition-transform duration-300 hover:scale-105">
-                    <img src="https://placehold.co/600x400/1e293b/d1d5db?text=Project+3" alt="Project 3" class="rounded-xl mb-4 w-full h-auto object-cover">
-                    <h3 class="text-xl font-semibold text-white mb-2">Project Title 3</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                        A brief description of your project. Explain the challenges you faced and how you overcame them. (e.g., Laravel, MySQL, JavaScript).
+                <!-- Project Card 2: Streamify Media Hub (FastAPI/Vue.js) -->
+                <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-blue-500/30 transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="mediahub-logo.png" alt="Streamify Media Hub Thumbnail" class="w-24 h-24 mb-6 rounded-lg ring-2 ring-blue-500/50">
+                    <h3 class="text-2xl font-bold mb-2 text-white">Streamify Media Hub</h3>
+                    <p class="text-gray-400 mb-4">
+                        An immersive media hub designed to catalog and stream various audio/video content. The backend, built with **FastAPI/Python**, features a high-performance RESTful API. This project showcases proficiency in handling large **multimedia datasets**, efficient data querying, and delivering a clean, modern **Vue.js** user interface.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                        <a href="https://streamify-mediahub.netlify.app" class="text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium">
                             <i class="fas fa-external-link-alt mr-1"></i> Live Demo
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                        <a href="https://github.com/lnarayan-main/fastapi-personal-media-library" class="text-gray-400 hover:text-gray-300 transition-colors duration-300 font-medium">
                             <i class="fab fa-github mr-1"></i> GitHub
                         </a>
                     </div>
-                </div> -->
+                </div>
 
-                  <div class="bg-gray-800 rounded-2xl p-8 shadow-lg text-left">
-                    <img src="https://placehold.co/100x100/2D3748/white?text=E-commerce" alt="E-commerce Thumbnail" class="w-24 h-24 mb-6 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-2">Mini E-commerce Store</h3>
+                 <!-- Project Card 3: Mini E-commerce Store (Django/Jinja2/Tailwind) -->
+                <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-blue-500/30 transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/100x100/2D3748/white?text=E-commerce" alt="E-commerce Thumbnail" class="w-24 h-24 mb-6 rounded-lg ring-2 ring-blue-500/50">
+                    <h3 class="text-2xl font-bold mb-2 text-white">Mini E-commerce Store</h3>
                     <p class="text-gray-400 mb-4">
-                        A full-stack e-commerce site developed to practice **Laravel** and **MySQL**. The application features product listings, a shopping cart, and a user checkout flow. This project demonstrates proficiency in **database design**, **server-side rendering**, and integrating **client-side interactivity with vanilla JavaScript**.
+                        A full-stack e-commerce site developed using the **Django** framework and **MySQL**. This project demonstrates expertise in building a **modern monolith**, utilizing Django's built-in features for user authentication, payment processing (mock), and database design. The frontend is built with efficient **Jinja2 Templating** and features a modern, responsive design using **Tailwind CSS**.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium">
                             <i class="fas fa-external-link-alt mr-1"></i> Live Demo
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                        <a href="#" class="text-gray-400 hover:text-gray-300 transition-colors duration-300 font-medium">
                             <i class="fab fa-github mr-1"></i> GitHub
                         </a>
                     </div>
@@ -182,49 +150,53 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="container mx-auto px-4 py-16">
+        <section id="skills" class="container mx-auto px-4 py-20 md:py-24">
             <div class="max-w-7xl mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-12">Skills & Technologies</h2>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-12">Skills & Technologies</h2>
                 <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+                    <!-- Row 1: Front-end & Styling -->
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
                         <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML5" class="w-16 h-16 mb-2">
-                        <p>HTML5</p>
+                        <p class="font-medium text-gray-200">HTML5</p>
                     </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
                         <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS3" class="w-16 h-16 mb-2">
-                        <p>CSS3</p>
+                        <p class="font-medium text-gray-200">CSS3</p>
                     </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
                         <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript" class="w-16 h-16 mb-2">
-                        <p>JavaScript</p>
+                        <p class="font-medium text-gray-200">JavaScript</p>
                     </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
                         <img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" alt="Vue.js" class="w-16 h-16 mb-2">
-                        <p>Vue.js</p>
+                        <p class="font-medium text-gray-200">Vue.js</p>
                     </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
-                        <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node.js" class="w-16 h-16 mb-2">
-                        <p>Node.js</p>
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
+                        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-16 h-16 mb-2">
+                        <p class="font-medium text-gray-200">Tailwind CSS</p>
                     </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+
+                    <!-- Row 2: Back-end, Databases, DevOps & Tools -->
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
+                        <!-- Updated to include Django -->
                         <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python" class="w-16 h-16 mb-2">
-                        <p>Python</p>
+                        <p class="font-medium text-gray-200">FastAPI/Django</p>
                     </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
                         <img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" alt="Laravel" class="w-16 h-16 mb-2">
-                        <p>Laravel</p>
+                        <p class="font-medium text-gray-200">Laravel/PHP</p>
                     </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
-                        <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB" class="w-16 h-16 mb-2">
-                        <p>MongoDB</p>
-                    </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
                         <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQL" class="w-16 h-16 mb-2">
-                        <p>SQL</p>
+                        <p class="font-medium text-gray-200">SQL/MySQL</p>
                     </div>
-                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
+                        <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker" class="w-16 h-16 mb-2">
+                        <p class="font-medium text-gray-200">Docker</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500">
                         <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" class="w-16 h-16 mb-2">
-                        <p>Git & GitHub</p>
+                        <p class="font-medium text-gray-200">Git & GitHub</p>
                     </div>
                 </div>
             </div>
@@ -239,6 +211,7 @@
                         I am currently seeking new opportunities. Feel free to contact me for collaborations or just to say hello!
                     </p>
                     <form action="https://formspree.io/f/xldpdbyk" method="POST" class="space-y-4" id="contact-form">
+                        <input type="hidden" name="_subject" value="New Portfolio Message from Laxmi Narayan">
                         <div>
                             <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         </div>
