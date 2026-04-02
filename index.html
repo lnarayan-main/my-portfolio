@@ -176,6 +176,40 @@
           My Projects
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-blue-500/30 transition-shadow duration-300 transform hover:-translate-y-1"
+          >
+            <div
+              class="w-24 h-24 mb-6 rounded-lg ring-2 ring-blue-500/50 flex items-center justify-center bg-gray-900"
+            >
+              <i class="fas fa-stopwatch text-4xl text-blue-500"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 text-white">Quiz Master Pro</h3>
+            <p class="text-gray-400 mb-4">
+              An interactive MCQ platform built with
+              <strong>React.js</strong> using <strong>Context API</strong> and
+              <strong>useReducer</strong> for robust state management. It
+              features a dynamic 20-second timer with auditory-style visual
+              hints at 10s and 5s to increase engagement. Includes multi-topic
+              selection (Python, Laravel, React, etc.), a "Time's Up"
+              intervention system, and seamless navigation with progress
+              tracking.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://ln-react-quiz.vercel.app"
+                class="text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium"
+              >
+                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/lnarayan-main/my-quiz-app-react"
+                class="text-gray-400 hover:text-gray-300 transition-colors duration-300 font-medium"
+              >
+                <i class="fab fa-github mr-1"></i> GitHub
+              </a>
+            </div>
+          </div>
           <!-- Project Card 1: My To-Do App (FastAPI/Vue.js) -->
           <div
             class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-blue-500/30 transition-shadow duration-300 transform hover:-translate-y-1"
@@ -293,15 +327,14 @@
           <h2 class="text-3xl md:text-5xl font-bold text-white mb-12">
             Skills & Technologies
           </h2>
-          <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
-            <!-- Row 1: Front-end & Styling -->
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             <div
               class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500"
             >
               <img
                 src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
                 alt="HTML5"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">HTML5</p>
             </div>
@@ -311,7 +344,7 @@
               <img
                 src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
                 alt="CSS3"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">CSS3</p>
             </div>
@@ -321,9 +354,20 @@
               <img
                 src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"
                 alt="JavaScript"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">JavaScript</p>
+            </div>
+
+            <div
+              class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500"
+            >
+              <img
+                src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                alt="React.js"
+                class="w-12 h-12 mb-2"
+              />
+              <p class="font-medium text-gray-200">React.js</p>
             </div>
             <div
               class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500"
@@ -331,7 +375,7 @@
               <img
                 src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg"
                 alt="Vue.js"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">Vue.js</p>
             </div>
@@ -340,21 +384,19 @@
             >
               <img
                 src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-                alt="Tailwind CSS"
-                class="w-16 h-16 mb-2"
+                alt="Tailwind"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">Tailwind CSS</p>
             </div>
 
-            <!-- Row 2: Back-end, Databases, DevOps & Tools -->
             <div
               class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500"
             >
-              <!-- Updated to include Django -->
               <img
                 src="https://www.vectorlogo.zone/logos/python/python-icon.svg"
                 alt="Python"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">Django/FastAPI</p>
             </div>
@@ -364,7 +406,7 @@
               <img
                 src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg"
                 alt="Laravel"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">Laravel/PHP</p>
             </div>
@@ -374,7 +416,7 @@
               <img
                 src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
                 alt="SQL"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">SQL/MySQL</p>
             </div>
@@ -382,9 +424,20 @@
               class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500"
             >
               <img
+                src="https://www.vectorlogo.zone/logos/influxdata/influxdata-icon.svg"
+                alt="InfluxDB"
+                class="w-12 h-12 mb-2"
+              />
+              <p class="font-medium text-gray-200">InfluxDB</p>
+            </div>
+
+            <div
+              class="bg-gray-800 rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:ring-2 ring-blue-500"
+            >
+              <img
                 src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"
                 alt="Docker"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">Docker</p>
             </div>
@@ -394,7 +447,7 @@
               <img
                 src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
                 alt="Git"
-                class="w-16 h-16 mb-2"
+                class="w-12 h-12 mb-2"
               />
               <p class="font-medium text-gray-200">Git & GitHub</p>
             </div>
